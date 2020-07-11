@@ -11,3 +11,11 @@ Command to build the imange:
 Command to run the container:
 
 >> docker run -d -p 1989:1989 --name kaldicpu --ipc=host  kaldi/cpu:latest
+
+## Using pre-built images
+
+> docker pull laleye/kaldi_cpu
+
+Command to run:
+
+> docker run -d -p 1989:1989 --name kaldicpu --ipc=host  laleye/kaldi_cpu:latest
