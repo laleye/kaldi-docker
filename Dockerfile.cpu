@@ -57,7 +57,7 @@ RUN make -j $(nproc)
 RUN apt-get install -y python3-pip 
 RUN pip3 install jupyterlab
 
-CMD ["jupyter", "lab", "--port=1989", "--no-browser", "--ip=0.0.0.0", "--allow-root", "--NotebookApp.token="]
+# CMD ["jupyter", "lab", "--port=1989", "--no-browser", "--ip=0.0.0.0", "--allow-root", "--NotebookApp.token="]
     
 EXPOSE 1989
 mkdir /WORKSPACE
